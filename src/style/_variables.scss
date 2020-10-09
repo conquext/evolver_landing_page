@@ -1,0 +1,12 @@
+$font-family: 'Spartan';
+$yellow: #efbb35;
+
+:root {
+  --font-family: #{$font-family};
+  --yellow: #{$yellow};
+}
+
+@mixin cssVariable($prop-name, $prop-css-name, $value) {
+  #{$prop-name}: $value;
+  #{$prop-name}: var(#{$prop-css-name}, $value);
+}
