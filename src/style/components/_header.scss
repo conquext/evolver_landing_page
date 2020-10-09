@@ -1,20 +1,29 @@
 header {
-  //   padding: $padding;
-  //   color: white;
-  //   .header-hero {
   background-image: url('../img/hero01.svg');
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100vw !important;
   height: 32rem;
-  //   height: 28rem;
-  //   width: 100vw;
-  //   height: 100vh;
-  //   }
   .header-scroll {
     transform: translateY(12rem);
-    // bottom: 0.5rem;
-    // position: sticky;
+  }
+  .header-carousel-control {
+    transform: translate(10%, 14rem);
+  }
+  .carousel-item {
+    &::before {
+      width: 2rem;
+      background: $gray-2;
+      display: inline-block;
+      height: 4px;
+      content: '';
+    }
+  }
+  .carousel-item.active {
+    &::before {
+      background: $orange-1;
+      border: 2px solid $orange-1;
+    }
   }
   @media (max-width: 768px) {
     .header-scroll {

@@ -6,8 +6,6 @@
 
 html,
 body {
-  //   @include cssVariable('font-family', '--font-family', #{$font-family});
-  //   @include cssVariable('background-color', '--gray-dark', $gray-dark);
   color: #f2f3f5;
   font-size: 16px;
   min-height: 500px;
@@ -37,49 +35,3 @@ p,
 li {
   margin-top: 0;
 }
-
-// a {
-//   @include cssVariable('color', '--yellow', $yellow);
-//   transition: 0.5s color ease;
-//   text-decoration: none;
-
-//   &:hover,
-//   &:active {
-//     @include cssVariable('color', '--red', $red);
-//   }
-// }
-
-// %reset-list-bullet {
-//   padding-left: 0;
-//   list-style: none;
-// }
-
-// * {
-//   /* Firefox */
-//   scrollbar-color: $yellow $gray-dark;
-// }
-
-// body {
-//   /* IE */
-//   scrollbar-base-color: #000;
-//   scrollbar-face-color: $yellow;
-//   scrollbar-3dlight-color: $yellow;
-//   scrollbar-highlight-color: $gray-dark;
-//   scrollbar-track-color: transparent;
-//   scrollbar-arrow-color: $yellow;
-//   scrollbar-shadow-color: rgba(0, 0, 0, 0.3);
-//   scrollbar-dark-shadow-color: #000;
-
-//   &::-webkit-scrollbar {
-//     width: 10px;
-//   }
-
-//   &::-webkit-scrollbar-track {
-//     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-//   }
-
-//   &::-webkit-scrollbar-thumb {
-//     background-color: $yellow;
-//     outline: 1px solid slategrey;
-//   }
-// }
