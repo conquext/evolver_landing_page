@@ -168,18 +168,18 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    // new CopyPlugin({
-    //   patterns: [
-    // {
-    //   from: path.resolve(paths.source, 'img'),
-    //   to: path.resolve(paths.target, 'img')
-    // }
-    // {
-    //   from: path.resolve(paths.source, "docs"),
-    //   to: path.resolve(paths.target, "docs"),
-    // },
-    //   ]
-    // }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(paths.source, 'img'),
+          to: path.resolve(paths.target, 'img')
+        }
+        // {
+        //   from: path.resolve(paths.source, "docs"),
+        //   to: path.resolve(paths.target, "docs"),
+        // },
+      ]
+    }),
     new HtmlWebpackPlugin({
       template: path.resolve(paths.source, 'index.html'),
       minify: htmlMinifyConfig

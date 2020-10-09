@@ -7,7 +7,12 @@
 module.exports = {
   purge: ['./**/*.html'],
   theme: {
-    extend: {}
+    extend: {
+      width: {
+        '15rem': '15rem',
+        '26rem': '26rem'
+      }
+    }
   },
   variants: {},
   plugins: []
